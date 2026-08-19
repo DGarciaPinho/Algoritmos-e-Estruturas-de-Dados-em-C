@@ -1,0 +1,195 @@
+LISTA 3 : 
+
+1. Faça um programa que leia os elementos de um vetor de números inteiros e, em
+seguida, altere o próprio vetor de modo que seus elementos fiquem armazenados na
+ordem inversa. A inversão deverá ser realizada sem a utilização de um segundo vetor.
+Ao final, apresente o vetor resultante.
+Exemplo:
+Vetor original:
+2 5 8 1 9
+Vetor resultante:
+9 1 8 5 2
+
+
+2. Faça um programa que leia os elementos de um vetor e, posteriormente, leia uma
+posição informada pelo usuário. O elemento localizado nessa posição deverá ser
+removido do vetor. Após a remoção, os elementos restantes deverão continuar ocu-
+pando posições consecutivas. Ao final, apresente os elementos que permaneceram
+no vetor.
+Exemplo:
+Vetor:
+10 20 30 40 50
+Posicao a ser removida: 2
+Vetor resultante:
+10 20 40 50
+
+3. Faça um programa que leia um vetor de números inteiros e, depois, leia um valor
+qualquer. Todas as ocorrências desse valor deverão ser retiradas do vetor. A operação
+deverá ser realizada utilizando apenas o próprio vetor original. Ao final do processo,
+apresente somente os elementos que permaneceram armazenados.
+Exemplo:
+Vetor:
+2 7 4 7 1 7
+Valor a ser removido: 7
+Vetor resultante:
+2 4 1
+
+
+4. Considere um vetor que ainda possua espaço disponível para armazenar novos ele-
+mentos. Faça um programa que leia os valores inicialmente presentes no vetor e, de-
+pois, leia um novo valor e a posição em que ele deverá ser inserido. Após a inserção,
+todos os valores deverão aparecer na ordem correta, incluindo o novo elemento na
+posição informada.
+Exemplo:
+Vetor:
+10 20 30 40
+Novo valor: 99
+Posicao: 2
+Vetor resultante:
+10 20 99 30 40
+
+
+5. Faça um programa que leia os elementos de um vetor e altere sua organização real-
+izando uma rotação de uma posição para a direita. Após essa operação, o elemento
+que originalmente estava na última posição deverá aparecer no início do vetor, en-
+quanto os demais deverão manter sua ordem relativa. A operação deverá ser real-
+izada sem o uso de um vetor auxiliar.
+Exemplo:
+Vetor original:
+1 2 3 4 5
+Vetor resultante:
+5 1 2 3 4
+
+6. Faça um programa que leia um vetor contendo uma quantidade par de elementos. Em
+seguida, modifique o próprio vetor de modo que a primeira metade passe a ocupar o
+lugar da segunda metade e a segunda metade passe a ocupar o lugar da primeira. A
+ordem dos elementos dentro de cada metade deverá ser preservada e não deverá ser
+utilizado um vetor auxiliar.
+Exemplo:
+Vetor original:
+1 2 3 4 5 6
+Vetor resultante:
+4 5 6 1 2 3
+
+
+7. Faça um programa que leia um vetor de números inteiros e elimine os valores que
+aparecem mais de uma vez. Para cada valor repetido, somente a sua primeira ocor-
+rência deverá permanecer no vetor. A operação deverá ser feita sem a utilização de
+um vetor auxiliar. Ao final, apresente apenas os valores distintos na mesma ordem em
+que apareceram originalmente.
+Exemplo:
+Vetor original:
+4 2 4 7 2 9 7
+Vetor resultante:
+4 2 7 9
+
+
+8. Faça um programa que leia um vetor de números inteiros e reorganize seus elemen-
+tos de maneira que eles fiquem armazenados em ordem crescente. Não devem ser
+utilizadas funções prontas da linguagem para realizar a ordenação. Ao final do pro-
+cessamento, apresente o vetor ordenado.
+Exemplo:
+Vetor original:
+8 3 6 1 4
+Vetor ordenado:
+1 3 4 6 8
+
+
+9. Faça um programa que leia um vetor de números inteiros e, a partir dele, construa um
+segundo vetor. Nesse novo vetor, todos os números pares deverão aparecer antes
+dos números ímpares. A ordem relativa em que os números pares aparecem no vetor
+original deverá ser mantida, assim como a ordem relativa dos números ímpares.
+Exemplo:
+Vetor original:
+3 8 5 2 7 4
+Vetor resultante:
+8 2 4 3 5 7
+
+
+10. Faça um programa que leia dois vetores de mesmo tamanho e crie um terceiro vetor
+contendo os elementos dos dois vetores de forma intercalada. O primeiro elemento
+do novo vetor deverá ser retirado do primeiro vetor, o segundo elemento deverá ser
+retirado do segundo vetor, e assim sucessivamente até que todos os valores tenham
+sido utilizados.
+Exemplo:
+Vetor A:
+1 2 3 4
+Vetor B:
+8 7 6 5
+Vetor resultante:
+1 8 2 7 3 6 4 5
+
+
+11. Faça um programa que leia dois vetores de números inteiros e construa um terceiro
+vetor contendo todos os valores presentes nos dois vetores. Caso um mesmo valor
+apareça mais de uma vez, seja dentro de um mesmo vetor ou nos dois vetores, ele
+deverá aparecer apenas uma vez no vetor resultante.
+Exemplo:
+Vetor A:
+1 2 3 4
+Vetor B:
+3 4 5 6
+Vetor resultante:
+1 2 3 4 5 6
+
+
+12. Faça um programa que leia um vetor de números inteiros e crie um segundo vetor
+contendo os mesmos elementos, porém armazenados na ordem inversa. O vetor
+original não deverá ser alterado durante o processo. Ao final, apresente tanto o vetor
+original quanto o novo vetor.
+Exemplo:
+Vetor original:
+4 8 2 9 1
+Novo vetor:
+1 9 2 8 4
+
+
+13. Faça um programa que leia dois vetores de números inteiros e produza dois novos ve-
+tores. Um deles deverá representar a união dos vetores originais, contendo todos os
+valores existentes em pelo menos um dos dois vetores, sem repetições. O outro dev-
+erá representar a interseção, contendo somente os valores que aparecem em ambos
+os vetores.
+Exemplo:
+Vetor A:
+1 3 5 7
+Vetor B:
+3 6 7 9
+Uniao:
+1 3 5 7 6 9
+Intersecao:
+3 7
+
+
+14. Considere que um vetor utiliza o valor −1 para representar posições que não contêm
+dados válidos. Faça um programa que leia esse vetor e crie um novo vetor contendo
+somente os valores válidos, desconsiderando todas as posições que possuem o valor
+−1. Os elementos válidos deverão aparecer no novo vetor na mesma ordem em que
+estavam originalmente.
+Exemplo:
+Vetor original:
+8 -1 3 -1 -1 7 5
+Vetor compactado:
+8 3 7 5
+
+
+15. Faça um programa que leia um vetor de números inteiros e um valor inteiro N. Em
+seguida, o vetor deverá ser rotacionado N posições para a direita, sem a utilização de
+um vetor auxiliar. Os elementos que ultrapassarem o final do vetor deverão reaparecer
+no início.
+Exemplo:
+Vetor original:
+1 2 3 4 5 6
+N = 2
+Vetor resultante:
+5 6 1 2 3 4
+
+
+16. Faça um programa que receba um vetor de números inteiros que já esteja ordenado
+em ordem crescente. O programa deverá eliminar as ocorrências repetidas de cada
+valor, mantendo somente uma ocorrência de cada número. A operação deverá ser
+realizada utilizando apenas o vetor original.
+Exemplo:
+Vetor original:
+1 1 1 3 3 5 7 7 9
+Vetor resultante:
+1 3 5 7 9
