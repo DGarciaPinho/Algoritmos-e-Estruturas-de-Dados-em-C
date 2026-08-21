@@ -5,6 +5,7 @@ Repositório com as resoluções, em C, das listas de exercícios da disciplina 
 ## Estrutura do repositório
 
 ```
+Estruturas/ Tipos de Estruturas de Dados em C 
 Lista1/   Exercícios introdutórios (aulas da Marta)
 Lista2/   Vetores e matrizes
 Lista3/   Manipulação de vetores in-place
