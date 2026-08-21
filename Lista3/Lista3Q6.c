@@ -14,10 +14,6 @@ Vetor resultante:
 #include <stdio.h>
 #include <stdlib.h>
 
-//EMPURRAR A EM B  
-void push(int *a,int *b){
-  *b = *a;
-}
 
 void swap(int *a,int *b){
   int temp = *a;
@@ -25,6 +21,28 @@ void swap(int *a,int *b){
   *b = temp;
 }
 
+void reshape(int *a,int z){
+  for(int i=0;i<z/2;++i){
+    swap(&a[i],&a[z-i-1]);
+  }
+}
+
 void main(){
   int x;
+
+  printf("Digite o tamanho do vetor :\n");
+  scanf(" %d",&x);
+
+  int *ptr = calloc(x,sizeof(int));
+
+  for(int i=0;i<x;++i){
+    printf("Digite o elemento : [%d]",i+1);
+    scanf("%d",&ptr[i]);
+  }
+
+  reshape(ptr,x);
+
+  for(int i=0;i<x;++i){
+    printf("%d,",ptr[i]);
+  }
 }
