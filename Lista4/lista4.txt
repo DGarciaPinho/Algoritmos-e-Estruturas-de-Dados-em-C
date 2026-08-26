@@ -1,0 +1,158 @@
+1. Escreva um programa em C que declare uma variável inteira e um ponteiro para essa
+variável. Leia um valor para a variável e, em seguida, exiba:
+(a) o valor armazenado na variável;
+(b) o endereço da variável;
+(c) o conteúdo armazenado no ponteiro;
+(d) o valor acessado por meio do ponteiro.
+
+2. Escreva um programa que leia um número inteiro e armazene seu endereço em um
+ponteiro. Utilizando apenas o ponteiro, altere o valor da variável para o dobro de seu
+valor original. Exiba o valor antes e depois da alteração.
+
+3. Declare duas variáveis inteiras e dois ponteiros, cada um associado a uma das var-
+iáveis. Leia os valores das duas variáveis e exiba qual delas possui o maior valor,
+realizando a comparação por meio dos ponteiros.
+
+4. Escreva um programa que declare uma variável do tipo float e um ponteiro associado
+a ela. Leia um valor real e altere esse valor, por meio do ponteiro, acrescentando 10%
+ao valor original.
+
+5. Implemente uma função com o cabeçalho void incrementar(int *valor). A função
+deverá acrescentar uma unidade ao conteúdo da variável apontada por valor. No
+programa principal, leia um número inteiro, chame a função e exiba o valor antes e
+depois da chamada.
+
+6. Implemente uma função void troca(int *a, int *b). A função deve trocar os con-
+teúdos das duas variáveis recebidas por meio dos ponteiros. No programa principal,
+leia os dois valores e exiba seus conteúdos antes e depois da chamada da função.
+
+7. Implemente a função void classifica(int *valor). A função deverá substituir o
+conteúdo da variável apontada por:
+• 1, caso o valor original seja positivo;
+• −1, caso seja negativo;
+• 0, caso seja igual a zero.
+O valor da variável, antes e após a alteração, deverá ser exibido pelo programa
+principal.
+
+8. Considere as seguintes declarações:
+i n t x = 10 ;
+i n t * p = &x ;
+i n t * * q = &p ;
+Sem alterar as declarações acima apresentadas, analise cada uma das expressões
+abaixo e descreva o que ela representa em relação às variáveis e aos ponteiros
+declarados. Para cada expressão, indique se o resultado corresponde a um valor
+ou a um endereço. Caso seja um endereço, informe a qual variável ou ponteiro esse
+endereço está associado. Caso seja um valor, informe de qual variável esse valor é
+obtido.
+a) x
+b) &x
+c) p
+d) *p
+e) &p
+f) q
+g) *q
+h) **q
+
+9. Implemente uma função que receba dois números inteiros por meio de ponteiros e
+faça com que o maior valor fique armazenado na primeira variável e o menor valor
+na segunda variável. O cabeçalho da função deverá ser void ordenar2(int *a, int
+*b).
+
+10. Implemente a função void divisao(int dividendo, int divisor, int *quociente,
+int *resto). A função deverá calcular simultaneamente o quociente e o resto de uma
+divisão inteira e retornar os dois resultados por meio dos parâmetros ponteiros. Con-
+sidere que o divisor deve ser diferente de zero.
+
+11. Implemente a função void estatisticas(int a, int b, int c, int *maior, int
+*menor, float *media). A função deverá determinar o maior valor, o menor valor
+e a média aritmética dos três números recebidos. Os três resultados deverão ser
+retornados por meio dos parâmetros ponteiros.
+
+12. Faça um programa que leia três valores inteiros e utilize uma função para colocá-los
+em ordem crescente. O cabeçalho da função deverá ser void ordenar3(int *a, int
+*b, int *c). Não utilize vetores dentro da função e não aplique algoritmos ou méto-
+dos de ordenação. A ordenação deve ser realizada apenas por meio de comparações
+e trocas entre as três variáveis, utilizando os ponteiros recebidos como parâmetros.
+
+13. Considere um vetor estático de inteiros contendo 10 posições. Leia os elementos do
+vetor e implemente uma função que calcule a soma de todos os seus elementos uti-
+lizando apenas aritmética de ponteiros. O cabeçalho deverá ser int somaVetor(int
+*vetor, int tamanho). Dentro da função, não utilize indexação por colchetes, como
+em vetor[i], para acessar os elementos do vetor.
+
+14. Utilizando um vetor estático de 10 números inteiros, implemente void contar(int
+*vetor, int tamanho, int *positivos, int *negativos, int *zeros). A função
+deverá percorrer o vetor utilizando aritmética de ponteiros e informar, por meio
+dos parâmetros, a quantidade de valores positivos, negativos e iguais a zero.
+
+15. Implemente uma função que receba um vetor estático de números inteiros e substi-
+tua cada elemento negativo pelo seu valor absoluto. O cabeçalho deverá ser void
+tornarPositivos(int *vetor, int tamanho). A função deverá percorrer o vetor
+utilizando aritmética de ponteiros, sem utilizar a notação vetor[i].
+
+16. Implemente uma função que receba um vetor estático de inteiros e determine simul-
+taneamente o maior e o menor valor encontrado. Utilize o seguinte cabeçalho void
+extremos(int *vetor, int tamanho, int *maior, int *menor). A função deverá
+percorrer o vetor utilizando aritmética de ponteiros.
+
+17. Considere um vetor estático contendo 10 números inteiros. Implemente o procedi-
+mento void separarParesImpares(int *vetor, int tamanho, int *pares, int
+impares). A função deverá contar quantos elementos são pares e quantos são ím-
+pares, armazenando os resultados nas variáveis indicadas pelos ponteiros pares e
+impares. A função deverá percorrer o vetor utilizando aritmética de ponteiros.
+
+18. Leia quatro números inteiros armazenados em quatro variáveis distintas e implemente
+o procedimento void ordenar4(int *a, int *b, int *c, int *d). Ao final da exe-
+cução da função, deverá ser satisfeita a condição:
+∗a ≤ ∗b ≤ ∗c ≤ ∗d
+Não utilize vetores ou matrizes auxiliares.
+
+19. Implemente uma função que receba um vetor estático e retorne um ponteiro para o
+maior elemento encontrado usando o cabeçalho int *maiorElemento(int *vetor,
+int tamanho). No programa principal, utilize o ponteiro retornado para exibir:
+• o maior valor;
+• o endereço do maior elemento;
+• a posição do elemento no vetor, sendo esta calculada utilizando a diferença entre
+ponteiros..
+
+20. Considere um vetor estático contendo 10 números inteiros. Implemente o procedi-
+mento void inverter(int *inicio, int *fim). O primeiro parâmetro deverá apon-
+tar para o primeiro elemento do vetor e o segundo para o último elemento. A função
+deverá inverter os elementos do vetor utilizando apenas os dois ponteiros. Dentro da
+função, não utilize índices.
+
+21. Implemente uma função que procure um determinado valor em um vetor estático
+usando o cabeçalho int *buscar(int *vetor, int tamanho, int valor). Caso o
+valor seja encontrado, a função deverá retornar um ponteiro para a primeira ocorrên-
+cia encontrada. Caso contrário, deverá retornar NULL. No programa principal, caso o
+valor seja encontrado, determine sua posição utilizando aritmética de ponteiros.
+
+22. Considere as variáveis int a, int b e int *p, declaradas no programa principal. Im-
+plemente a função void apontaMaior(int **p, int *a, int *b). A função deverá
+fazer com que p passe a apontar para a variável que contém o maior valor. Caso os
+valores sejam iguais, p deverá apontar para a. Após a chamada da função, o programa
+principal deverá alterar o maior valor para zero utilizando somente o ponteiro p.
+
+23. Implemente uma função que receba um vetor estático e faça dois ponteiros apontarem,
+respectivamente, para o menor e para o maior elemento do vetor. Utilize o cabeçalho
+void localizarExtremos(int *vetor, int tamanho, int **menor, int **maior).
+No programa principal, exiba os valores e as posições dos elementos apontados por
+menor e maior. As posições deverão ser calculadas por meio da diferença entre
+ponteiros.
+
+24. Considere uma matriz estática de inteiros com dimensões 3 X 3. Leia os elementos
+da matriz e implemente uma função que calcule a soma de todos os seus elementos
+utilizando um ponteiro para inteiro para percorrer sequencialmente as posições de
+memória da matriz. Utilize o cabeçalho int somaMatriz(int *p, int quantidade).
+A chamada da função poderá ser realizada utilizando o endereço do primeiro elemento
+da matriz. Não utilize índices dentro da função somaMatriz, somente aritmética
+de ponteiros.
+
+25. Considere um vetor estático de 10 números inteiros. Implemente o procedimento void
+minMax(int *inicio, int *fim, int **menor, int **maior). Os ponteiros inicio
+e fim indicam, respectivamente, o primeiro e o último elemento do vetor. A função
+deverá percorrer o intervalo utilizando exclusivamente aritmética de ponteiros e fazer:
+• *menor apontar para o menor elemento;
+• *maior apontar para o maior elemento.
+Após a chamada, o programa principal deverá trocar os conteúdos do menor e do
+maior elemento utilizando somente os ponteiros retornados pela função.
