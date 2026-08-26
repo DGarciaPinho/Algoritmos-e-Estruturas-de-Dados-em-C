@@ -16,6 +16,7 @@ int *maiorElemento(int *vetor, int tamanho){
   for(int i=0;i<tamanho;++i){
     if(*vetor > m){
       m = *vetor;
+      maior = vetor;
     }
     vetor++;
   }
@@ -36,7 +37,7 @@ void main(){
 
   int *ptr = maiorElemento(arr,n);
 
-  printf("O valor %d",*ptr);
-  printf("Endereço %p",ptr);
-  printf("Posição %d",ptr-arr+1);
+  printf("O valor %d \n",*ptr);
+  printf("Endereço %p \n ",ptr);
+  printf("Posição %d \n",ptr-arr+1);
 }

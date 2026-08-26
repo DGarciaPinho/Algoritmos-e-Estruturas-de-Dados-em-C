@@ -15,7 +15,7 @@ void swap(int *a,int *b){
 }
 
 void inverter(int *inicio, int *fim){
-  int tamanho = inicio - fim;
+  int tamanho = fim - inicio;
   int n = tamanho;
 
   while(n > tamanho / 2){
