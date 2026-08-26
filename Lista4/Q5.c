@@ -5,3 +5,17 @@ programa principal, leia um número inteiro, chame a função e exiba o valor an
 depois da chamada.
 */
 
+#include <stdio.h>
+
+void incrementar(int *valor){
+  *valor = *valor + 1;
+}
+
+void main(){
+  int a;
+  scanf("%d",&a);
+
+  incrementar(&a);
+
+  printf("Novo valor de a %d",a);
+}
