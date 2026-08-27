@@ -31,7 +31,7 @@ Primeiro contato com estruturas de dados propriamente ditas: vetores e matrizes 
 
 Arquivos nomeados como `Lista2Qn.c`. A pasta [`versões/`](Lista2/versões) guarda variações de algumas soluções e [`erradas/`](Lista2/erradas) contém tentativas incorretas mantidas para referência.
 
-## Lista 3 — Manipulação de vetores in-place ⭐
+## Lista 3 — Manipulação de vetores in-place 
 
 Esta é a lista com as **questões mais interessantes** do repositório. O fio condutor é resolver problemas clássicos de manipulação de vetores **sem usar um vetor auxiliar**, o que obriga a pensar em algoritmos in-place e manipulação cuidadosa de índices — muito mais próximo do tipo de raciocínio cobrado em entrevistas técnicas e no dia a dia de estruturas de dados. Entre os destaques:
 
@@ -46,6 +46,8 @@ Esta é a lista com as **questões mais interessantes** do repositório. O fio c
 - Compactação de vetor removendo posições inválidas (sentinela `-1`).
 
 Arquivos nomeados como `Lista3Qn.c` (a variante `Lista3Q2F.c` é uma versão alternativa da questão 2). O enunciado completo com os 16 exercícios está em [`Lista3.txt`](Lista3/Lista3.txt).
+
+## Lista 4 — Manipulação de ponteiros in-place
 
 ## Compilando e executando
 
