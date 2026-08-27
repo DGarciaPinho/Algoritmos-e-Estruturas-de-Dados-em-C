@@ -9,6 +9,7 @@ Estruturas/ Tipos de Estruturas de Dados em C
 Lista1/   Exercícios introdutórios (aulas da Marta)
 Lista2/   Vetores e matrizes
 Lista3/   Manipulação de vetores in-place
+Lista4/   Manipulação de ponteiros in-place
 PDF/      Enunciados e slides das aulas
 ```
 
