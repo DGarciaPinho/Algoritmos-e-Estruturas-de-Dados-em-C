@@ -12,10 +12,8 @@ void main(){
   }
 
   if(media > 59){
-    printf("Passou");
-    printf("%d",media);
+    printf("Situação: Aprovado!"); 
   }else{
-    printf("Não passou");
-    printf("%d",media);
+    printf("Situação: Reprovado!");
   }
 }

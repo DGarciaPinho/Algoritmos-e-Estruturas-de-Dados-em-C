@@ -10,27 +10,34 @@ de ponteiros.
 #include <stdio.h>
 #include <stdlib.h>
 
-int somaMatriz(int *p, int quantidade){
-  int n = 0,soma = 0;
-  while(n<9){
-    soma = soma + *ptr;
-    n++;
-    ptr++;
+int somaMatriz(int **p){
+  int soma =0;
+  for(int i=0;i<3;++i){
+    for(int j=0;j<3;++j){
+      soma = soma + *(*(p + i ) + j);
+    }
   }
+  return soma;
 }
 
 void main(){
-  int m[3][3];
+
+  //Adicionando as linhas 
+  int **ptr = malloc(3 * sizeof(int *));
+    for(int i=0;i<3;++i){
+      // Alocando as colunas para cada linha
+      ptr[i]= malloc(3 * sizeof(int));
+    }
 
   for(int i=0;i<3;++i){
     for(int j=0;j<3;++j){
       printf("Preenchendo o elemento [%d][%d] \n",i+1,j+1);
-      scanf("%d",&m[i][j]);
+      scanf("%d",(*(ptr + i ) + j));
     }
   }
 
-  int *ptr = m[0][0];
-  int q = somaMatriz(ptr,9);
+
+  int q = somaMatriz(ptr);
 
   printf("A soma é igual a %d",q);
 }

@@ -9,7 +9,7 @@ void main(){
 
     for(int i=0;i<6;++i){
         for(int j=0;j<6;++j){
-            printf("Digite o Valor [%d][%d] \n ",i+1,j+1);
+           // printf("Digite o Valor [%d][%d] \n ",i+1,j+1);
             scanf("%d",&matriz[i][j]);
           }
       }
@@ -24,14 +24,16 @@ void main(){
             }
         }
   //Demonstrando a Matriz 
+  /*
   for(int i=0;i<6;++i){
     for(int j=0;j<6;++j){
       printf("%d",matriz[i][j]);
     }
     printf("\n ");
-  }
+   }
+  */
 
-    printf("Soma das Bordas : %d \n ", somab);
-    printf("Soma do interior : %d \n ",somai);
+    printf("Soma dos elementos da borda: %d\n", somab);
+    printf("Soma dos elementos do interior: %d",somai);
   }
 

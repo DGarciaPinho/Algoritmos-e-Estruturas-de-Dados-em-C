@@ -3,38 +3,40 @@ soma dos elementos localizados à esquerda seja igual à soma dos elementos loca
 izados à direita. Caso exista, apresente a posição encontrada. Exemplo: No vetor 1
 2 3 4 6, o índice 3 (o qual armazena o valor 4) é o ponto de equilíbrio porque a soma
 dos valores à esquerda (1 + 2 + 3 = 6) é igual à soma dos elementos à direita. Nesse
-caso, o próprio valor 6, armazenado no índice 4.*/ 
+caso, o próprio valor 6, armazenado no índice 4.*/
 
 #include <stdio.h>
 
-void main(){
-  int v[15],sright=0,sleft=0,x,ver=0;
+int main(){
+  int v[15];
+  int pos, achou = 0;
 
-  // Lendo os 15 valores 
-  for(int i=0;i<15;++i){
-    printf("Digite o %d valor",i+1);
-    scanf("%d",&v[i]);
-    sright = sright + v[i];
+  for(int i = 0; i < 15; i++){
+    scanf("%d", &v[i]);
   }
-  printf("Valores Recebidos, analisando... ");
 
-  for(int i=0;i<15;++i){
-    sright = sright - v[i];
-    if(i!=0){
-        sleft = sleft + v[i-1];
-      }
+  for(int i = 0; i < 15; i++){
+    int sleft = 0, sright = 0;
 
-    // Verificando se sright(soma dos valores a direita do indice) é igual
-    // ao sleft(soma dos valores a esquerda do indice)
-    if(sleft == sright){
-        x = i; // x é o valor do indice que vai ser apresentado como equilíbrio
-        ver = 1;
-      }
+    for(int j = 0; j < i; j++){
+      sleft += v[j];
+    }
+    for(int j = i + 1; j < 15; j++){
+      sright += v[j];
     }
 
-    if(ver==0){
-        printf("Não existe ponto de equilíbrio");
-      }else{
-          printf("O ponto de equilíbrio é o indice %d (O %d valor inserido) ",x,x+1);
-        }
+    if(sleft == sright){
+      pos = i;
+      achou = 1;
+      break;
+    }
+  }
+
+  if(achou){
+    printf("Posição: %d", pos + 1);
+  }else{
+    //printf("Não existe ponto de equilíbrio");
+  }
+
+  return 0;
 }

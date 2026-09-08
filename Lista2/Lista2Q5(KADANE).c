@@ -48,9 +48,9 @@ int main() {
     int i;
 
     // Leitura do vetor
-    printf("Digite os %d numeros inteiros:\n", N);
+   // printf("Digite os %d numeros inteiros:\n", N);
     for (i = 0; i < N; i++) {
-        printf("v[%d]: ", i);
+        //printf("v[%d]: ", i);
         scanf("%d", &v[i]);
     }
 
@@ -79,17 +79,17 @@ int main() {
         }
     }
 
-    // Resultados
-    printf("\n--- Resultado ---\n");
-    printf("a) Maior soma encontrada: %d\n", somaMax);
-    printf("b) Posicao inicial do trecho: %d\n", inicioMax);
-    printf("c) Posicao final do trecho: %d\n", fimMax);
+    // Resultados  
+    printf("Maior soma encontrada: %d\n", somaMax);
+    printf("Posição inicial: %d\n", inicioMax);
+    printf("Posição final: %d\n", fimMax);
 
+  /* SERVE APENAS PARA MOSTRAR O TRECHO 
     printf("Trecho: ");
     for (i = inicioMax; i <= fimMax; i++) {
         printf("%d ", v[i]);
     }
     printf("\n");
-
+*/
     return 0;
 }
