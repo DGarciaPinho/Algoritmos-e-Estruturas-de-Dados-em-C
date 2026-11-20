@@ -1,0 +1,58 @@
+1. Leia 20 números inteiros e armazene-os em um vetor. Em seguida, construa dois
+novos vetores: um contendo apenas os valores negativos e outro contendo os valores
+maiores ou iguais a zero. Apresente os dois vetores ao final.
+
+2. Leia 10 números inteiros e verifique se o vetor é um palíndromo, isto é, se possui
+a mesma sequência de valores quando percorrido da esquerda para a direita e da
+direita para a esquerda. Exemplos: 2 5 8 8 5 2 é um palíndromo enquanto 2 5 8 7
+5 2 não o é.
+
+3. Leia 15 números inteiros e reorganize o vetor de forma que todos os valores iguais a
+zero sejam deslocados para o final, mantendo a ordem relativa dos demais elementos.
+Exemplo: 3 0 7 0 2 5 0 → 3 7 2 5 0 0 0
+
+4. Leia um vetor com 15 números inteiros e determine se existe uma posição na qual a
+soma dos elementos localizados à esquerda seja igual à soma dos elementos local-
+izados à direita. Caso exista, apresente a posição encontrada. Exemplo: No vetor 1
+2 3 4 6, o índice 3 (o qual armazena o valor 4) é o ponto de equilíbrio porque a soma
+dos valores à esquerda (1 + 2 + 3 = 6) é igual à soma dos elementos à direita. Nesse
+caso, o próprio valor 6, armazenado no índice 4.
+
+5. Leia um vetor com 20 números inteiros, que podem ser positivos ou negativos, e
+determine qual trecho de elementos consecutivos possui a maior soma. Apresente:
+a) a maior soma encontrada;
+b) a posição inicial do trecho;
+c) a posição final do trecho.
+No exemplo, -2 3 5 -1 4 -10 7, o trecho de maior soma é 3 5 -1 4.
+
+6. Um vetor de 9 posições contém números inteiros distintos pertencentes ao intervalo de
+1 a 10. Exatamente um número desse intervalo não está presente no vetor. Determine
+qual é o número ausente. Exemplo: 1 2 3 4 6 7 8 9 10 → Número ausente: 5.
+
+7. Leia uma matriz 6 × 6 de números inteiros e calcule separadamente:
+a) a soma dos elementos localizados na borda da matriz;
+b) a soma dos elementos localizados no interior da matriz.
+
+8. Leia uma matriz 5 × 5. Em seguida, leia dois números que representam índices de
+linhas e faça a troca completa dessas duas linhas. Depois, leia dois índices de colunas
+e faça a troca completa dessas duas colunas. Apresente a matriz resultante.
+
+9. Leia duas matrizes de dimensões A3×4 e B4×2. Calcule a matriz C = A × B. A matriz
+resultante deverá possuir dimensão 3 × 2.
+
+10. Leia uma matriz quadrada 3 × 3 e determine se ela representa um quadrado mágico.
+Uma matriz é considerada um quadrado mágico quando a soma dos elementos de
+todas as linhas, todas as colunas; da diagonal principal e da diagonal secundária é a
+mesma. Apresente também o valor dessa soma.
+
+11. Leia uma matriz 5 × 5 de números inteiros e construa uma segunda matriz. Para
+cada posição que não pertence à borda, o elemento da nova matriz deverá receber a
+soma do elemento original com seus oito vizinhos. Ou seja, para uma posição [i][j],
+deverão ser considerados os elementos da região 3 × 3 centralizada nessa posição.
+As posições da borda deverão permanecer inalteradas.
+
+12. Leia uma matriz 4 × 4 e apresente seus elementos seguindo um percurso em espiral,
+começando pelo canto superior esquerdo. Por exemplo, para uma matriz 4 × 4, o
+percurso deverá seguir aproximadamente a ordem:
+→ → → ↓ ↓ ↓ ← ← ← ↑ ↑ → → ↓ ←
+Todos os elementos da matriz deverão ser apresentados exatamente uma vez
