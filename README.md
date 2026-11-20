@@ -69,7 +69,7 @@ Arquivos nomeados como `Lista3Qn.c` (a variante `Lista3Q2F.c` é uma versão alt
 - Ponteiro para ponteiro: `apontaMaior` (`int **p`), `localizarExtremos` e `minMax` fazendo ponteiros externos apontarem para o menor/maior elemento (Q22, Q23, Q25);
 - Soma de matriz 3×3 percorrida como bloco contíguo de memória com um único `int *` (Q24).
 
-Arquivos nomeados como `Qn.c` (`Q19R.c` e `Q20R.c` são as versões revisadas dessas questões). O enunciado completo está em [`lista4.txt`](Listas/Lista4/lista4.txt) e os binários compilados ficam em [`executaveis/`](Listas/Lista4/executaveis).
+Arquivos nomeados como `Qn.c` (`Q19R.c` e `Q20R.c` são as versões revisadas dessas questões). O enunciado completo está em [`lista4.txt`](Listas/Lista4/lista4.txt).
 
 ## Lista 5 — Alocação dinâmica de memória
 
@@ -84,7 +84,7 @@ Lista sobre alocação dinâmica com `malloc`, `calloc` e `realloc`, culminando 
 - Matriz 2D com linhas e colunas alocadas dinamicamente, preenchida e impressa por procedimentos separados usando aritmética de ponteiros (Q7);
 - Matriz **tridimensional** (`int ***`) com profundidade, linhas e colunas informadas pelo usuário (Q8).
 
-Arquivos nomeados como `Qn.c`. O enunciado está em [`Lista5_AEDS1_Alocacao_Dinamica.txt`](Listas/Lista5/Lista5_AEDS1_Alocacao_Dinamica.txt), os binários em [`executaveis/`](Listas/Lista5/executaveis) e capturas de execução em [`saidas/`](Listas/Lista5/saidas).
+Arquivos nomeados como `Qn.c`. O enunciado está em [`Lista5_AEDS1_Alocacao_Dinamica.txt`](Listas/Lista5/Lista5_AEDS1_Alocacao_Dinamica.txt) e capturas de execução em [`saidas/`](Listas/Lista5/saidas).
 
 ## Compilando e executando
 
@@ -94,3 +94,5 @@ Cada questão é um arquivo `.c` independente. Para compilar e rodar, por exempl
 gcc Listas/Lista3/src/Lista3Q5.c -o Lista3Q5
 ./Lista3Q5
 ```
+
+Os executáveis compilados não são versionados (ver [`.gitignore`](.gitignore)); basta compilar o `.c` localmente.

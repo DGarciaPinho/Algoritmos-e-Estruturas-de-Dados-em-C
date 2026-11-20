@@ -1,0 +1,16 @@
+# Executáveis compilados (arquivos sem extensão)
+*
+!*/
+!*.*
+
+# Pastas de executáveis
+exec/
+executaveis/
+
+# Objetos e binários comuns
+*.o
+*.out
+*.exe
+
+# Repositório separado (Algoritmos-e-Estruturas-de-Dados-em-Python)
+Testes/Estruturas/AEDS1PY/
