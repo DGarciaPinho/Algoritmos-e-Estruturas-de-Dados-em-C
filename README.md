@@ -1,21 +1,22 @@
 # Algoritmos e Estruturas de Dados em C
 
-Repositório com as resoluções, em C, das listas de exercícios da disciplina de Algoritmos e Estruturas de Dados (AEDs 1). Os enunciados originais estão disponíveis em PDF na pasta [`PDF/`](PDF), junto com os slides das aulas.
+Repositório com as resoluções, em C, das listas de exercícios da disciplina de Algoritmos e Estruturas de Dados (AEDs 1). Os enunciados originais estão disponíveis em PDF na pasta [`Listas/PDF/`](Listas/PDF), junto com os slides das aulas.
 
 ## Estrutura do repositório
 
 ```
-Estruturas/ Tipos de Estruturas de Dados em C 
-Lista1/   Exercícios introdutórios (aulas da Marta)
-Lista2/   Vetores e matrizes
-Lista3/   Manipulação de vetores in-place
-<<<<<<< HEAD
-Lista4/   Manipulação de ponteiros in-place
-=======
-Lista4/   Ponteiros e aritmética de ponteiros
-Lista5/   Alocação dinâmica de memória
->>>>>>> 0796214 (Atualizando o readme)
-PDF/      Enunciados e slides das aulas
+Listas/
+  Lista1/   Exercícios introdutórios (aulas da Marta)
+  Lista2/   Vetores e matrizes
+  Lista3/   Manipulação de vetores in-place
+  Lista4/   Ponteiros e aritmética de ponteiros
+  Lista5/   Alocação dinâmica de memória
+  Lista6/   Strings
+  Lista7/   Recursividade
+  Lista8/   Structs
+  ListaC++/ Listas refeitas em C++
+  PDF/      Enunciados e slides das aulas
+  TP/       Trabalho prático
 ```
 
 ## Lista 1 — Fundamentos da linguagem C
@@ -30,12 +31,12 @@ Primeiro contato com estruturas de dados propriamente ditas: vetores e matrizes 
 
 - Separação de vetores por sinal e verificação de palíndromo;
 - Deslocamento de zeros e ponto de equilíbrio em um vetor;
-- **Maior soma de subvetor contíguo (Kadane)** — [`Lista2Q5(KADANE).c`](Lista2/Lista2Q5(KADANE).c);
+- **Maior soma de subvetor contíguo (Kadane)** — [`Lista2Q5(KADANE).c`](<Listas/Lista2/src/Lista2Q5(KADANE).c>);
 - Número ausente em uma sequência;
 - Soma de borda/interior de matriz, troca de linhas/colunas, multiplicação de matrizes;
 - Verificação de quadrado mágico e **percurso em espiral de matriz**.
 
-Arquivos nomeados como `Lista2Qn.c`. A pasta [`versões/`](Lista2/versões) guarda variações de algumas soluções e [`erradas/`](Lista2/erradas) contém tentativas incorretas mantidas para referência.
+Arquivos nomeados como `Lista2Qn.c`. A pasta [`versões/`](Listas/Lista2/src/versões) guarda variações de algumas soluções e [`erradas/`](Listas/Lista2/src/erradas) contém tentativas incorretas mantidas para referência.
 
 ## Lista 3 — Manipulação de vetores in-place 
 
@@ -51,11 +52,8 @@ Esta é a lista com as **questões mais interessantes** do repositório. O fio c
 - Intercalação de dois vetores, união e interseção de conjuntos;
 - Compactação de vetor removendo posições inválidas (sentinela `-1`).
 
-Arquivos nomeados como `Lista3Qn.c` (a variante `Lista3Q2F.c` é uma versão alternativa da questão 2). O enunciado completo com os 16 exercícios está em [`Lista3.txt`](Lista3/Lista3.txt).
+Arquivos nomeados como `Lista3Qn.c` (a variante `Lista3Q2F.c` é uma versão alternativa da questão 2). O enunciado completo com os 16 exercícios está em [`Lista3.txt`](Listas/Lista3/Lista3.txt).
 
-<<<<<<< HEAD
-## Lista 4 — Manipulação de ponteiros in-place
-=======
 ## Lista 4 — Ponteiros e aritmética de ponteiros
 
 25 exercícios dedicados a ponteiros em C, com dificuldade crescente. O tema central é usar ponteiros para **retornar valores por parâmetro** e para **percorrer vetores e matrizes sem indexação por colchetes**, apenas com aritmética de ponteiros. Principais tópicos:
@@ -71,7 +69,7 @@ Arquivos nomeados como `Lista3Qn.c` (a variante `Lista3Q2F.c` é uma versão alt
 - Ponteiro para ponteiro: `apontaMaior` (`int **p`), `localizarExtremos` e `minMax` fazendo ponteiros externos apontarem para o menor/maior elemento (Q22, Q23, Q25);
 - Soma de matriz 3×3 percorrida como bloco contíguo de memória com um único `int *` (Q24).
 
-Arquivos nomeados como `Qn.c` (`Q19R.c` e `Q20R.c` são as versões revisadas dessas questões). O enunciado completo está em [`lista4.txt`](Lista4/lista4.txt) e os binários compilados ficam em [`executaveis/`](Lista4/executaveis).
+Arquivos nomeados como `Qn.c` (`Q19R.c` e `Q20R.c` são as versões revisadas dessas questões). O enunciado completo está em [`lista4.txt`](Listas/Lista4/lista4.txt) e os binários compilados ficam em [`executaveis/`](Listas/Lista4/executaveis).
 
 ## Lista 5 — Alocação dinâmica de memória
 
@@ -86,14 +84,13 @@ Lista sobre alocação dinâmica com `malloc`, `calloc` e `realloc`, culminando 
 - Matriz 2D com linhas e colunas alocadas dinamicamente, preenchida e impressa por procedimentos separados usando aritmética de ponteiros (Q7);
 - Matriz **tridimensional** (`int ***`) com profundidade, linhas e colunas informadas pelo usuário (Q8).
 
-Arquivos nomeados como `Qn.c`. O enunciado está em [`Lista5_AEDS1_Alocacao_Dinamica.txt`](Lista5/Lista5_AEDS1_Alocacao_Dinamica.txt), os binários em [`executaveis/`](Lista5/executaveis) e capturas de execução em [`saidas/`](Lista5/saidas).
->>>>>>> 0796214 (Atualizando o readme)
+Arquivos nomeados como `Qn.c`. O enunciado está em [`Lista5_AEDS1_Alocacao_Dinamica.txt`](Listas/Lista5/Lista5_AEDS1_Alocacao_Dinamica.txt), os binários em [`executaveis/`](Listas/Lista5/executaveis) e capturas de execução em [`saidas/`](Listas/Lista5/saidas).
 
 ## Compilando e executando
 
 Cada questão é um arquivo `.c` independente. Para compilar e rodar, por exemplo, a questão 5 da Lista 3:
 
 ```bash
-gcc Lista3/Lista3Q5.c -o Lista3Q5
+gcc Listas/Lista3/src/Lista3Q5.c -o Lista3Q5
 ./Lista3Q5
 ```
